@@ -4,9 +4,10 @@
  *
  */
 
-import { Text, View } from "react-native";
+import { Text, View, ImageBackground } from "react-native";
 import styled from "styled-components/native";
 import AppLoading from "expo-app-loading";
+import { StatusBar } from "expo-status-bar";
 import {
   useFonts,
   Roboto_700Bold,
@@ -27,9 +28,10 @@ export default function Home() {
 
   return (
     <StyledView style={{}}>
-      <StyledBackground source={retroGif}>
+      <StatusBar style="inverted" translucent backgroundColor="transparent" />
+      <ImageBackground source={retroGif}>
         <StyledText>Hello World</StyledText>
-      </StyledBackground>
+      </ImageBackground>
     </StyledView>
   );
 }

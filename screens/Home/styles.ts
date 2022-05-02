@@ -8,16 +8,11 @@ export const StyledView = styled.View`
   justify-content: center;
   background-color: ${({ theme }) => theme.colors.primary};
 `;
-export const StyledBackground = styled.ImageBackground`
-  flex: 1;
-  justify-content: center;
-  align-items: center;
-`;
+export const StyledBackground = styled.ImageBackground``;
 
 export const StyledText = styled.Text`
   font-size: 20px;
-  align-items: "center";
   font-family: ${({ theme }) => theme.fonts.secondary};
-  font-size: 65;
+  font-size: 65px;
   color: ${({ theme }) => theme.colors.accent};
 `;
